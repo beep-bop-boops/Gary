@@ -1,0 +1,16 @@
+pyinstaller -F --hidden-import "babel.numbers" main.py
+
+
+
+Save file as .pyw and use line below to hide console window
+pyinstaller -F --hidden-import "babel.numbers" main.pyw
+
+creates a directory and puts all libs into that
+--one dir
+
+creates one file and adds all the libs into that
+--one file
+pyinstaller -onefile --hidden-import "babel.numbers" main.pyw
+
+
+pyinstaller -F --hidden-import "babel.numbers" --onefile --icon=C:\Users\hucur\Documents\Code\Gary\search.ico main.pyw
